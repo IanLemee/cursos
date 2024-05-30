@@ -23,7 +23,9 @@ public class CursoEntity {
 
     @NotBlank
     private String category;
-    private Enum Active;
+
+    @Enumerated(EnumType.STRING)
+    private Active active;
 
     @CreationTimestamp
     private Timestamp createdAt;
